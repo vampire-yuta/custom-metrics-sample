@@ -6,7 +6,7 @@ delete:
 	kind delete cluster
 
 install-prometheus-stack:
-	helm install prometheus prometheus-community/kube-prometheus-stack -n prometheus --create-namespace
+	helm install prometheus prometheus-community/kube-prometheus-stack -n prometheus --create-namespace -f values.yaml
 
 build-metrics-app:
 	docker build -t prometheus-metrics-app:1.0 .

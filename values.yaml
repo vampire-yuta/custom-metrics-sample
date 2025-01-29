@@ -1,0 +1,6 @@
+prometheus:
+  prometheusSpec:
+    additionalScrapeConfigs: 
+      - job_name: 'prometheus'
+        static_configs:
+          - targets: ['prometheus-metrics-app:9090']
