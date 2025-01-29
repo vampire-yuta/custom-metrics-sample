@@ -1,5 +1,7 @@
 # custom-metrics-sample
 
+## Deploy
+
 ```
 # Create k8s Cluster
 make create
@@ -17,6 +19,7 @@ make load-metrics-app
 make apply-metrics-app
 ```
 
+## test
 
 ```
 make port-forward-metrics-app
@@ -25,3 +28,8 @@ make port-forward-metrics-app
 ```
 make port-forward-prometheus
 ```
+
+## Prometheus
+![alt text](image-1.png)
+
+![alt text](image.png)

@@ -2,7 +2,7 @@ from prometheus_client import start_http_server, Counter
 import time
 
 # カウンターメトリクスの定義
-REQUEST_COUNT = Counter("api_requests_total", "Total API requests")
+REQUEST_COUNT = Counter("sample_api_requests_total", "Total API requests")
 
 
 # メトリクスを更新するサンプル関数
